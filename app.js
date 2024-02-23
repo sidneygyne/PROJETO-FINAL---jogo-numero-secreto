@@ -1,5 +1,5 @@
 let listaDeNunmerosSorteados = []; // lista e criada colocando [] e sepando os elementos da lista com , e colocando "" os itens da lista exemlo: let frutas = ["Maçã", "Uva", "Laranja"]; 
-let numeroLimite = 100;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -17,7 +17,7 @@ function exibirTextoNaTela(tag, texto) {
 // função exibir mensagem inicial
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1', 'Jogodo número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 50');
 }
 
 exibirMensagemInicial();
@@ -35,7 +35,7 @@ function verificarChute() { // refere a função da linha 27 do arquivo html
     
     } else {
         if(chute > numeroSecreto ) {
-            exibirTextoNaTela('p', 'O número secreto é menor!');    
+            exibirTextoNaTela('p', `O número secreto é menor que ${chute}!`);    
             } else {
                 exibirTextoNaTela('p', `O número secreto é maior que ${chute}!`);    
             }
